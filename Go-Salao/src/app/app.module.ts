@@ -6,16 +6,19 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './shared/login/login.component';
-import { NotfoundComponent } from './shared/notfound/notfound.component';
+import { NotfoundComponent } from './shared/pages/notfound/notfound.component';
+import { MeAjudaComponent } from './shared/pages/me-ajuda/me-ajuda.component';
 import { LayoutModule } from './layout/layout.module';
 import { FornecedorModule } from './core/fornecedor/fornecedor.module';
+import { SalaoModule } from './core/salao/salao.module';
 import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    MeAjudaComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,7 @@ import { AppRoutingModule } from './app.routing.module';
     RouterModule,
     LayoutModule,
     FornecedorModule,
+    SalaoModule,
     AppRoutingModule
   ],
   providers: [],
