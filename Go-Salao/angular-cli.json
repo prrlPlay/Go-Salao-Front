@@ -18,13 +18,26 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "../node_modules/materialize-css/dist/css/materialize.css",
-        "styles.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "styles.css",
+        "responsive.css",
+        "../node_modules/animate.css/animate.min.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/hammerjs/hammer.js",
-        "../node_modules/materialize-css/dist/js/materialize.js"
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./js/ripples.min.js",
+        "../node_modules/materialize-css/dist/js/materialize.js",
+        "./js/wow.js",
+        "./js/jquery.mmenu.min.all.js",
+        "./js/count-to.js",
+        "./js/jquery.inview.min.js",
+        "./js/classie.js",
+        "./js/jquery.nav.js",
+        "./js/smooth-on-scroll.js",
+        "./js/smooth-scroll.js",
+        "./js/main.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
