@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Salao } from './models/salao';
 
 @Component({
-  selector: 'app-salao',
+  selector: 'salao',
   templateUrl: './salao.component.html',
   styleUrls: ['./salao.component.css']
 })

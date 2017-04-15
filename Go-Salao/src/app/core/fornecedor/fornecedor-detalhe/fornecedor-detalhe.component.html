@@ -1,0 +1,49 @@
+<h4>Dados do Fornecedor</h4>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="form-group">
+      <label>Nome:</label>  {{ fornecedor.nome }}
+    </div>
+
+    <div class="form-group">
+      <label>CPF/CNPJ:</label>  {{ fornecedor.documento }}
+    </div>
+
+    <div class="form-group">
+      <label>E-mail:</label>  {{ fornecedor.email }}
+    </div>
+
+    <div class="form-group">
+      <label>Telefone:</label>  {{ fornecedor.telefone }}
+    </div>
+  </div>
+</div>
+
+<h4>Endereço</h4>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="form-group">
+      <label>CEP:</label> {{ fornecedor.endereco.cep }}
+    </div>
+
+    <div class="form-group">
+      <label>Logradouro:</label> {{ fornecedor.endereco.logradouro }}
+    </div>
+
+    <div class="form-group">
+      <label>Número:</label> {{ fornecedor.endereco.numero }}
+    </div>
+
+    <div class="form-group">
+      <label>Bairro:</label> {{ fornecedor.endereco.bairro }}
+    </div>
+
+    <div class="form-group">
+      <label>Cidade:</label> {{ fornecedor.endereco.cidade }}
+    </div>
+
+    <div class="form-group">
+      <label>Estado:</label> {{ fornecedor.endereco.estado }}
+    </div>
+  </div>
+</div>

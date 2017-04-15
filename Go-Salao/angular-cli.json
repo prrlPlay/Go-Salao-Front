@@ -21,8 +21,7 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "styles.css",
-        "responsive.css",
-        "../node_modules/animate.css/animate.min.css"
+        "responsive.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",

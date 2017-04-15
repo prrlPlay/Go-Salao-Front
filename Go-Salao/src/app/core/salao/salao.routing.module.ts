@@ -11,6 +11,6 @@ const salaoRoutes: Routes = [
 
 @NgModule({
     imports: [RouterModule.forChild(salaoRoutes)],
-    exports: []
+    exports: [RouterModule]
 })
 export class SalaoRoutingModule { }

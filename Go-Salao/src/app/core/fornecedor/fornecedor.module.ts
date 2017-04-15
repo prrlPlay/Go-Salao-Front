@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { FornecedorComponent } from './fornecedor.component';
 import { FornecedorRoutingModule } from './fornecedor.routing.module';
+import { FornecedorDetalheComponent } from './fornecedor-detalhe/fornecedor-detalhe.component';
+import { FornecedorFormComponent } from './fornecedor-form/fornecedor-form.component';
+import { FornecedorListaComponent } from './fornecedor-lista/fornecedor-lista.component';
+import { FornecedorService } from './fornecedor.service';
 
 @NgModule({
     imports: [
@@ -13,8 +17,13 @@ import { FornecedorRoutingModule } from './fornecedor.routing.module';
         FornecedorComponent
     ],
     declarations: [
-        FornecedorComponent
+        FornecedorComponent,
+        FornecedorDetalheComponent,
+        FornecedorFormComponent,
+        FornecedorListaComponent
     ],
-    providers: []
+    providers: [
+        FornecedorService
+    ]
 })
 export class FornecedorModule { }

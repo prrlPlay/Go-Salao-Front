@@ -1,0 +1,30 @@
+<div class="col-md-5 align-title">
+  <h4>Lista de fornecedores</h4>
+</div>
+
+<button class="btn btn-xs btn-success" style="float: right" routerLink="novo">Novo fornecedor <i class="glyphicon glyphicon-plus"></i></button>
+
+<table class="table table-striped table-bordered">
+  <tr>
+    <th>Fornecedor</th>
+    <th>Documento</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let f of _fornecedores">
+    <td> {{ f.nome }} </td>
+    <td> {{ f.documento }} </td>
+    <td>
+      <button class="btn btn-xs" routerLink="{{ f.id }}">
+        <i class="glyphicon glyphicon-eye-open"></i>
+      </button>
+
+      <button class="btn btn-primary btn-xs" routerLink="{{ f.id }}/editar">
+        <i class="glyphicon glyphicon-pencil"></i>
+      </button>
+
+      <button class="btn btn-danger btn-xs">
+        <i class="glyphicon glyphicon-remove"></i>
+      </button>
+    </td>
+  </tr>
+</table>
