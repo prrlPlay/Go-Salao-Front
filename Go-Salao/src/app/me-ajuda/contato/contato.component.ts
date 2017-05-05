@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'gl-contato',
+  selector: 'contato',
   templateUrl: './contato.component.html',
   styleUrls: ['./contato.component.css']
 })

@@ -1,5 +1,7 @@
-<div class="col-md-5 align-title">
-  <h4>Lista de fornecedores</h4>
+<div class="col-md-5">
+  <div class="row">
+    <h4>Lista de fornecedores</h4>
+  </div>
 </div>
 
 <button class="btn btn-xs btn-success" style="float: right" routerLink="novo">Novo fornecedor <i class="glyphicon glyphicon-plus"></i></button>
@@ -8,23 +10,17 @@
   <tr>
     <th>Fornecedor</th>
     <th>Documento</th>
-    <th></th>
+    <th style="text-align:center;">
+      <i class="glyphicon glyphicon-cog"></i>
+    </th>
   </tr>
   <tr *ngFor="let f of _fornecedores">
-    <td> {{ f.nome }} </td>
+    <td><a routerLink="{{ f.id }}"> {{ f.nome }} </a></td>
     <td> {{ f.documento }} </td>
-    <td>
-      <button class="btn btn-xs" routerLink="{{ f.id }}">
-        <i class="glyphicon glyphicon-eye-open"></i>
-      </button>
-
-      <button class="btn btn-primary btn-xs" routerLink="{{ f.id }}/editar">
-        <i class="glyphicon glyphicon-pencil"></i>
-      </button>
-
-      <button class="btn btn-danger btn-xs">
-        <i class="glyphicon glyphicon-remove"></i>
-      </button>
+    <td align="center">
+      <a class="btn btn-default btn-xs" routerLink="{{ f.id }}"><em class="glyphicon glyphicon-eye-open"></em></a>
+      <a class="btn btn-primary btn-xs" routerLink="{{ f.id }}/editar"><em class="glyphicon glyphicon-pencil"></em></a>
+      <a class="btn btn-danger btn-xs"><em class="glyphicon glyphicon-remove"></em></a>
     </td>
   </tr>
 </table>

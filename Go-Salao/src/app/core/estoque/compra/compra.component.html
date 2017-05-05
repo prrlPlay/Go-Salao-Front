@@ -1,0 +1,79 @@
+<div class="container">
+
+<div class="col-md-3">
+  <button class="btn btn-xs btn-danger" routerLink="/estoque">
+    <i class="glyphicon glyphicon-chevron-left"></i> Estoque
+  </button>
+</div>
+
+  <div class="col-md-8 center">
+      <div class="form-group">
+        <label for="sel1">Fornecedor:</label>
+        <select class="form-control" id="sel1">
+          <optgroup label="Selecione um fornecedor">
+            <option>LG</option>
+            <option>Sr. Joaquim</option>
+            <option>Parmalat</option>
+            <option>Stefanini</option>
+          </optgroup>
+        </select>
+      </div>
+  </div>
+
+
+</div>
+
+
+
+    <div class="modal-dialog">
+      <div class="">
+          <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Login para GoSalão.com</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-6">
+                      <div class="well">
+                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="username" placeholder="seu@email.com">
+                              </div>
+                              <span class="help-block"></span>
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input  type="password" class="form-control" name="password" placeholder="sua senha">
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember"> Remember login
+                                  </label>
+                                  <p class="help-block">(if this is a private computer)</p>
+                              </div>
+                              <button type="submit" class="btn btn-success btn-block">Login</button>
+                              <a href="/forgot/" class="btn btn-default btn-block">Ajuda com login</a>
+                          </form>
+                      </div>
+
+                      <a class="btn btn-block btn-social btn-facebook">
+                        <i class="fa fa-facebook"></i> Entrar usando Facebook
+                      </a>
+                      <span class="help-block"></span>
+                  </div>
+                  <div class="col-xs-6">
+                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-check text-success"></span> Acompanhe seus pedidos</li>
+                          <li><span class="fa fa-check text-success"></span> Gerencie seu negócio facilmente</li>
+                          <li><span class="fa fa-check text-success"></span> Save your favorites</li>
+                          <li><span class="fa fa-check text-success"></span> Fast checkout</li>
+                          <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
+                          <li><a href="/read-more/"><u>Saiba mais</u></a></li>
+                      </ul>
+                      <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>

@@ -25,7 +25,11 @@ export class FornecedorFormComponent implements OnInit {
 
         if (this.id != null)
         {
-          this.fornecedor = this.service.obterFornecedor(this.id);
+          console.log("Fornecedor com ID: " + this.id);
+          // this.fornecedor = this.service.obterFornecedor(this.id);
+        }
+        else {
+          console.log("Novo fornecedor!");
         }
       }
     );

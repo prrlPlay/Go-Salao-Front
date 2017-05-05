@@ -9,6 +9,6 @@ const layoutRoutes: Routes = [
 
 @NgModule({
     imports: [RouterModule.forChild(layoutRoutes)],
-    exports: []
+    exports: [RouterModule]
 })
 export class LayoutRoutingModule { }

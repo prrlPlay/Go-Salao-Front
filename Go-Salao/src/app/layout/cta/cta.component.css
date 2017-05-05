@@ -1,0 +1,11 @@
+#cta {
+  background: #009688;
+  height: 160px;  
+}
+#cta .drawer {
+  float: left;
+  margin-right: 80px;
+}
+#cta .title-small {
+  color: #fff;
+}
