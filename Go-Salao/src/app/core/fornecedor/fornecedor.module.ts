@@ -8,10 +8,13 @@ import { FornecedorDetalheComponent } from './fornecedor-detalhe/fornecedor-deta
 import { FornecedorFormComponent } from './fornecedor-form/fornecedor-form.component';
 import { FornecedorListaComponent } from './fornecedor-lista/fornecedor-lista.component';
 
+import { SharedModule } from './../../shared/shared.module';
+
 @NgModule({
     imports: [
         CommonModule,
-        FornecedorRoutingModule
+        FornecedorRoutingModule,
+        SharedModule
     ],
     exports: [
         FornecedorComponent

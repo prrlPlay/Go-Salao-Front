@@ -17,4 +17,8 @@ export class FornecedorListaComponent implements OnInit {
   }
 
   ngOnInit() { }
+
+  remover(id: number) {
+    alert("Remover fornecedor " + id);
+  }
 }

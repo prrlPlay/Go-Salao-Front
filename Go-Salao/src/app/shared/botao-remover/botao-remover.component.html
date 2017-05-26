@@ -1,0 +1,4 @@
+<button (click)="executarAcao()" class="btn {{ estilo }}" [type]="tipo" [disabled]="desabilitado">
+    <em *ngIf="icone" class='glyphicon glyphicon-remove'></em>
+    {{ nome }}
+</button>
